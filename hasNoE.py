@@ -4,23 +4,15 @@ def hasNoE(word):
     for letters in word:
         if letters=='E'or letters=='e':
             return 'False'
-<<<<<<< HEAD
     return 'True'
-=======
-        else:
-            result='True'
-    return result
 
 def hasNoZ(word):
     result='True'
     for letters in word:
-        if letters=='Z' or letter=='z':
+        if letters=='Z' or letters=='z':
 	    return 'False'
-	else:
-	     result='True'
-    return result
+    return 'True'
 
->>>>>>> 5388d8bfc17e894cd23d10788ea2e59e544a1128
              
 count_total=0 
 count_noE=0
@@ -35,7 +27,7 @@ for line in fin:
     if hasNoZ(word)=='True':
         count_noZ=count_noZ+1
 percentageE =(float(count_noE)/float(count_total))*100
-percentageZ=(float)(count_noZ)/float(count_total))*100
+percentageZ=(float(count_noZ)/float(count_total))*100
 print('Total percentage of words not having E:')
 print(percentageE)
 print('Total percentage of words not having Z:')
