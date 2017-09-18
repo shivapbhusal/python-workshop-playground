@@ -4,9 +4,7 @@ def hasNoE(word):
     for letters in word:
         if letters=='E'or letters=='e':
             return 'False'
-        else:
-            result='True'
-    return result 
+    return 'True'
              
 count_total=0 
 count_noE=0
