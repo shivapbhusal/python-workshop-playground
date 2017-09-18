@@ -1,13 +1,30 @@
-#This program checks if a word has E in it . 
+#This program checks if a word has E and Z in it . 
 def hasNoE(word):
     result='True'
     for letters in word:
         if letters=='E'or letters=='e':
             return 'False'
+<<<<<<< HEAD
     return 'True'
+=======
+        else:
+            result='True'
+    return result
+
+def hasNoZ(word):
+    result='True'
+    for letters in word:
+        if letters=='Z' or letter=='z':
+	    return 'False'
+	else:
+	     result='True'
+    return result
+
+>>>>>>> 5388d8bfc17e894cd23d10788ea2e59e544a1128
              
 count_total=0 
 count_noE=0
+count_noZ=0
 fin=open('words.txt')
 for line in fin:
     count_total=count_total+1
@@ -15,7 +32,12 @@ for line in fin:
     if hasNoE(word)=='True':
         count_noE=count_noE+1 
         print(word)
-percentage =(float(count_noE)/float(count_total))*100
+    if hasNoZ(word)=='True':
+        count_noZ=count_noZ+1
+percentageE =(float(count_noE)/float(count_total))*100
+percentageZ=(float)(count_noZ)/float(count_total))*100
 print('Total percentage of words not having E:')
-print(percentage)
+print(percentageE)
+print('Total percentage of words not having Z:')
+print(percentageZ)
 
