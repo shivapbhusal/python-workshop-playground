@@ -1,6 +1,8 @@
 def countdown(n):
     while n>0:
-        print(n) 
+        print n 
         n=n-1
-    print("Blastoff"); 
+    print "Blastoff";
+
+
 countdown(1000000000)
